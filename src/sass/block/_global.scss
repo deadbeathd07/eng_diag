@@ -1,0 +1,69 @@
+@import "./vars.scss";
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: "Proxima Nova Semibold", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  color: $default-text;
+  @media (max-width: 901px){
+    font-size: 14px;
+  line-height: 24px;
+  }
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.main {
+  flex: 1 0 auto;
+}
+.footer {
+  flex: 0 0 auto;
+}
+
+.container {
+  max-width: 1450px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.container-fluid {
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  padding: 29px 57px 26px 58px;
+  font-family: "Gilroy Extrabold", sans-serif;
+  font-size: 15px;
+  line-height: normal;
+  text-transform: uppercase;
+  color: #000;
+  border: none;
+  border-radius: 2px;
+  background-color: #fee040;
+  transition: all 0.3s;
+  cursor: pointer;
+  &:hover {
+    background-color: #FFEB81;
+    box-shadow: 0px 28px 50px -20px rgba(254, 224, 64, 0.5);
+  }
+  @media (max-width: 1080px) {
+    font-size: 14px;
+  }
+  @media (max-width: 1116px) {
+    padding: 20px 48px 17px 49px;
+  }
+}
